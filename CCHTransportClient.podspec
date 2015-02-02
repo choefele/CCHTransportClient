@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'CCHTransportClient'
-  spec.version  = '1.0'
+  spec.version  = '1.0.0'
   spec.license  = 'Copyright Claus Höfele'
   spec.summary  = 'Objective-C implementation of various transportation APIs.'
   spec.homepage = 'https://github.com/optionu/CCHTransportClient'
