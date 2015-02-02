@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Option-U Software. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #import "CCHTransportGenerator.h"
 
