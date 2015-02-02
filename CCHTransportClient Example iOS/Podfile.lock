@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CCHBinaryData: 7977a7e3b0a557bfaa98876c5c27033f39d1b8ca
-  CCHTransportClient: 6638ece58c59114f442f1f91a7a31adff1f9a6b9
+  CCHTransportClient: 14f2aae23deea2ee5c7168858a7dc9ccb6e17603
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
   Ono: cf5cb37c76225200d6f063e4189c15b4b6c9d5fe
 
