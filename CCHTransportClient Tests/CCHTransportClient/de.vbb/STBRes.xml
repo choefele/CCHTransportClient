@@ -1,0 +1,1508 @@
+<ResC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://demo.hafas.de/xml/vbb/se/hafasXMLInterface.xsd" ver="1.1" prod="HAFAS 5.35.VBB.4.10.8" lang="DE"> 
+	<STBRes plan_version="planid=1403188756-planid_adr=1336152870-planid_poi=1403189605-planid_ext=1399478252">
+		<JourneyList>
+			<STBJourney trainId="3334908600#25.06.14" journeyId="18198">
+				<MainStop>
+					<BasicStop index="34">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:06</Time>
+							<Platform>
+								<Text>5</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>RE1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="CATEGORY" code="6">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DB Regio</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>RE1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Brandenburg, Hauptbahnhof</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="41">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9275110</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="41">
+						<Attribute priority="260" type="NORMAL" code="ot">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme begrenzt möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="41">
+						<Attribute priority="450" type="NORMAL" code="SN">
+							<AttributeVariant type="NORMAL">
+								<Text>SnackPoint/Imbiss im Zug</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="41">
+						<Attribute priority="560" type="NORMAL" code="EH">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrzeuggebundene Einstiegshilfe vorhanden</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FEFFFE3FFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>nicht 3. Jul, 19. bis 21. Jul 2014</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="536908601#25.06.14">
+				<MainStop>
+					<BasicStop index="14">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:09</Time>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus 118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="CATEGORY" code="3">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>B</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>BVG</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Zehlendorf Eiche</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>R000221</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="40">
+						<Attribute priority="2" type="NORMAL" code="bf">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2221508600#25.06.14" journeyId="01166">
+				<MainStop>
+					<BasicStop index="3">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:12</Time>
+							<Platform>
+								<Text>3</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Frohnau (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="32">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9092201</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="32">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="32">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26., 27. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2574808615#25.06.14" journeyId="07141">
+				<MainStop>
+					<BasicStop index="0">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:13</Time>
+							<Platform>
+								<Text>4</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Ahrensfelde Bhf (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9170004</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>F00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26. bis 29. Jun 2014</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2225708603#25.06.14" journeyId="01159">
+				<MainStop>
+					<BasicStop index="34">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:14</Time>
+							<Platform>
+								<Text>1</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Potsdam Hbf</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9230999</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="533608611#25.06.14">
+				<MainStop>
+					<BasicStop index="26">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:16</Time>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus 118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="CATEGORY" code="3">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>B</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>BVG</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Steinstücken</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="26" to="40">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>R000294</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="40">
+						<Attribute priority="2" type="NORMAL" code="bf">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="536908602#25.06.14">
+				<MainStop>
+					<BasicStop index="14">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:29</Time>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus 118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="CATEGORY" code="3">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>B</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>BVG</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>118</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Zehlendorf Eiche</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="14" to="40">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>R000221</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="40">
+						<Attribute priority="2" type="NORMAL" code="bf">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2217908600#25.06.14" journeyId="01168">
+				<MainStop>
+					<BasicStop index="3">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:32</Time>
+							<Platform>
+								<Text>3</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Schönholz (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="27">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9085201</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="27">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="27">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26., 27. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2575508600#25.06.14" journeyId="07143">
+				<MainStop>
+					<BasicStop index="0">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:33</Time>
+							<Platform>
+								<Text>4</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S+U Lichtenberg Bhf (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9160004</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="18">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26., 27. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2225708604#25.06.14" journeyId="01161">
+				<MainStop>
+					<BasicStop index="34">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:34</Time>
+							<Platform>
+								<Text>1</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Potsdam Hbf</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9230999</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="3370608600#26.06.14" journeyId="18743">
+				<MainStop>
+					<BasicStop index="6">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:41</Time>
+							<Platform>
+								<Text>5</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>RE7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="CATEGORY" code="6">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DB Regio</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>RE7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Bad Belzig, Bahnhof</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="6" to="16">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9220143</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="16">
+						<Attribute priority="260" type="NORMAL" code="ot">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme begrenzt möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="16">
+						<Attribute priority="560" type="NORMAL" code="EH">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrzeuggebundene Einstiegshilfe vorhanden</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2217808600#25.06.14" journeyId="01170">
+				<MainStop>
+					<BasicStop index="3">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:52</Time>
+							<Platform>
+								<Text>3</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Bornholmer Str. (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="3" to="25">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9110011</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="25">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26., 27. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2573508600#25.06.14" journeyId="07145">
+				<MainStop>
+					<BasicStop index="0">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:53</Time>
+							<Platform>
+								<Text>4</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Ostbahnhof (Berlin)</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9120005</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="14">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>C00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26., 27. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="2225708605#25.06.14" journeyId="01163">
+				<MainStop>
+					<BasicStop index="34">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:54</Time>
+							<Platform>
+								<Text>1</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="CATEGORY" code="0">
+							<AttributeVariant type="NORMAL">
+								<Text>S</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>S-7</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DBS</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>S1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>S Potsdam Hbf</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="34" to="37">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9230999</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="2" type="NORMAL" code="bb">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="37">
+						<Attribute priority="350" type="NORMAL" code="FB">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>nicht täglich</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>26. Jun</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="1562608600#25.06.14">
+				<MainStop>
+					<BasicStop index="20">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:57</Time>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus N16</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="CATEGORY" code="3">
+							<AttributeVariant type="NORMAL">
+								<Text>Bus</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>B</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>BVG</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>N16</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Zehlendorf Eiche</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="20" to="36">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>R000221</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="36">
+						<Attribute priority="2" type="NORMAL" code="bf">
+							<AttributeVariant type="NORMAL">
+								<Text>barrierefrei</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="36">
+						<Attribute priority="350" type="NORMAL" code="co">
+							<AttributeVariant type="NORMAL">
+								<Text>ab Zehlendorf Eiche weiter als Bus M48 Richtung S+U Alexanderplatz</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>FFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>täglich</Text>
+						</RegularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+			<STBJourney trainId="3337508600#25.06.14" journeyId="18154">
+				<MainStop>
+					<BasicStop index="16">
+						<Station name="S Wannsee Bhf (Berlin)" x="13179103" y="52421458" type="WGS84" externalId="9053301#86" externalStationNr="9053301" />
+						<Dep>
+							<Time>26.06.14T00:59</Time>
+							<Platform>
+								<Text>5</Text>
+							</Platform>
+						</Dep>
+					</BasicStop>
+				</MainStop>
+				<JourneyAttributeList>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="NAME">
+							<AttributeVariant type="NORMAL">
+								<Text>RE1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="CATEGORY" code="6">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="INTERNALCATEGORY">
+							<AttributeVariant type="NORMAL">
+								<Text>RE</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="OPERATOR">
+							<AttributeVariant type="NORMAL">
+								<Text>DB Regio</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="NUMBER">
+							<AttributeVariant type="NORMAL">
+								<Text>RE1</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="DIRECTION">
+							<AttributeVariant type="NORMAL">
+								<Text>Brandenburg, Hauptbahnhof</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="DIRECTIONFLAG">
+							<AttributeVariant type="NORMAL">
+								<Text>2</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="16" to="23">
+						<Attribute type="DIRECTIONCODE">
+							<AttributeVariant type="NORMAL">
+								<Text>9275110</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="23">
+						<Attribute priority="260" type="NORMAL" code="ot">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrradmitnahme begrenzt möglich</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="23">
+						<Attribute priority="450" type="NORMAL" code="SN">
+							<AttributeVariant type="NORMAL">
+								<Text>SnackPoint/Imbiss im Zug</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+					<JourneyAttribute from="0" to="23">
+						<Attribute priority="560" type="NORMAL" code="EH">
+							<AttributeVariant type="NORMAL">
+								<Text>Fahrzeuggebundene Einstiegshilfe vorhanden</Text>
+							</AttributeVariant>
+						</Attribute>
+					</JourneyAttribute>
+				</JourneyAttributeList>
+				<ServiceDaysList>
+					<ServiceDays>
+						<ServiceBits>CE963E3CF9F3E7CF9F3E7CF9E3E7C0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ServiceBits>
+						<RegularServiceText>
+							<Text>Mo - Fr</Text>
+						</RegularServiceText>
+						<IrregularServiceText>
+							<Text>nicht 3., 8., 11., 21. Jul, 3. Okt</Text>
+						</IrregularServiceText>
+					</ServiceDays>
+				</ServiceDaysList>
+			</STBJourney>
+		</JourneyList>
+	</STBRes>
+</ResC>

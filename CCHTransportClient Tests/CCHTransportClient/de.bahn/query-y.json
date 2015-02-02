@@ -1,0 +1,116 @@
+{
+    "prods": "111111111111111111",
+    "stops": [{
+              "x": "13411788",
+              "y": "52523638",
+              "name": "Alexanderplatz Bhf (S+U)\/Memhardstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FMemhardstr.,%20Berlin",
+              "prodclass": "0",
+              "extId": "630727484",
+              "puic": "199",
+              "dist": "72",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }, {
+              "x": "13413946",
+              "y": "52523180",
+              "name": "Alexanderplatz [Bus] (U), Berlin",
+              "urlname": "Alexanderplatz%20%5BBus%5D%20(U),%20Berlin",
+              "prodclass": "32",
+              "extId": "728658",
+              "puic": "80",
+              "dist": "85",
+              "planId": "1405451291",
+              "stopweight": "370"
+              }, {
+              "x": "13411537",
+              "y": "52523755",
+              "name": "Alexanderplatz Bhf (S+U)\/Memhardstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FMemhardstr.,%20Berlin",
+              "prodclass": "0",
+              "extId": "620727484",
+              "puic": "199",
+              "dist": "93",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }, {
+              "x": "13411087",
+              "y": "52523341",
+              "name": "Alexanderplatz Bhf (S+U)\/Memhardstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FMemhardstr.,%20Berlin",
+              "prodclass": "32",
+              "extId": "727484",
+              "puic": "80",
+              "dist": "109",
+              "planId": "1405451291",
+              "stopweight": "1555"
+              }, {
+              "x": "13412130",
+              "y": "52524240",
+              "name": "Memhardstr., Berlin",
+              "urlname": "Memhardstr.,%20Berlin",
+              "prodclass": "288",
+              "extId": "732558",
+              "puic": "80",
+              "dist": "111",
+              "planId": "1405451291",
+              "stopweight": "402"
+              }, {
+              "x": "13410620",
+              "y": "52522928",
+              "name": "Alexanderplatz Bhf (S+U)\/Memhardstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FMemhardstr.,%20Berlin",
+              "prodclass": "0",
+              "extId": "610727484",
+              "puic": "199",
+              "dist": "146",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }, {
+              "x": "13410431",
+              "y": "52523045",
+              "name": "Alexanderplatz Bhf (S+U)\/Memhardstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FMemhardstr.,%20Berlin",
+              "prodclass": "0",
+              "extId": "600727484",
+              "puic": "199",
+              "dist": "155",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }, {
+              "x": "13411159",
+              "y": "52521966",
+              "name": "Alexanderplatz Bhf (S+U)\/Dircksenstr., Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU)%2FDircksenstr.,%20Berlin",
+              "prodclass": "256",
+              "extId": "727460",
+              "puic": "80",
+              "dist": "180",
+              "planId": "1405451291",
+              "stopweight": "329"
+              }, {
+              "x": "13410638",
+              "y": "52522254",
+              "name": "Berlin Alexanderplatz",
+              "urlname": "Berlin%20Alexanderplatz",
+              "prodclass": "0",
+              "extId": "628011155",
+              "puic": "199",
+              "dist": "181",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }, {
+              "x": "13410638",
+              "y": "52522254",
+              "name": "Alexanderplatz Bhf (S+U), Berlin",
+              "urlname": "Alexanderplatz%20Bhf%20(S%2BU),%20Berlin",
+              "prodclass": "0",
+              "extId": "650732533",
+              "puic": "199",
+              "dist": "181",
+              "planId": "1405432648",
+              "stopweight": "0"
+              }],
+    "error": "0",
+    "numberofstops": "10"
+}
