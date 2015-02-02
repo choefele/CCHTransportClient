@@ -65,6 +65,11 @@
                BlueprintName = "CCHTransportClient Tests"
                ReferencedContainer = "container:CCHTransportClient Example iOS.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CCHTransportDEVBBClientTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
