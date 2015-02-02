@@ -17,5 +17,5 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '7.0'
   spec.osx.deployment_target = '10.9'
 
-  spec.source_files = 'CCHTransportClient/*.{h,m}'
+  spec.source_files = 'CCHTransportClient/**/*.{h,m}'
 end
