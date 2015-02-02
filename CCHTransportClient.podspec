@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version  = '1.0.0'
   spec.license  = 'Copyright Claus Höfele'
   spec.summary  = 'Objective-C implementation of various transportation APIs.'
-  spec.homepage = 'https://github.com/optionu/CCHTransportClient'
+  #spec.homepage = 'https://github.com/optionu/CCHTransportClient'
   spec.authors  = { 'Claus Höfele' => 'claus@claushoefele.com' }
   spec.social_media_url = 'https://twitter.com/claushoefele'
   spec.source   = { :git => 'https://github.com/optionu/CCHTransportClient.git', :tag => spec.version.to_s }
