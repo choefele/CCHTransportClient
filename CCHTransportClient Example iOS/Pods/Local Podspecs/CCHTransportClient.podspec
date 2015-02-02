@@ -10,9 +10,9 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'CoreLocation'
   spec.requires_arc = true
 
-  spec.dependency 'Ono', '~> 1.1.3'
+  spec.dependency 'Ono', '~> 1.1.0'
   spec.dependency 'CCHBinaryData', '~> 1.0.0'
-  spec.dependency 'GZIP', '~> 1.0.3'
+  spec.dependency 'GZIP', '~> 1.0.0'
 
   spec.ios.deployment_target = '7.0'
   spec.osx.deployment_target = '10.9'
