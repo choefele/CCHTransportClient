@@ -36,7 +36,11 @@
     CCHTransportDEBahnQueryGenerator *generator = [[CCHTransportDEBahnQueryGenerator alloc] initWithDate:date fromLocation:nil toLocation:nil transportModeMask:CCHTransportClientModeAll];
     NSURLRequest *request = [generator generateRequest];
     NSString *URLString = request.URL.query;
-    XCTAssertTrue([URLString containsString:@"REQ0JourneyTime=03:59"]); // GMT -> MEZ
+    
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:@"CET"];
+    NSString *journeyTime = timeZone.isDaylightSavingTime ? @"REQ0JourneyTime=02:59" : @"REQ0JourneyTime=03:59";
+    
+    XCTAssertTrue([URLString containsString:journeyTime]); // GMT -> CET without daylight saving
 }
 
 - (void)testLocationStationID
