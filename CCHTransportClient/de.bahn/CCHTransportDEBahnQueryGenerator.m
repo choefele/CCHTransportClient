@@ -61,9 +61,7 @@ static NSString * const API_URL_TRIPS_FORMAT = @"http://reiseauskunft.bahn.de/bi
         dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"CET"];
     });
     
-    // bahn.de doesn't use daylight saving
-    NSDate *dateWithoutDaylightSaving = [date dateByAddingTimeInterval:-dateFormatter.timeZone.daylightSavingTimeOffset];
-    return [dateFormatter stringFromDate:dateWithoutDaylightSaving];
+    return [dateFormatter stringFromDate:date];
 }
 
 + (NSString *)dateStringFromDate:(NSDate *)date
@@ -76,9 +74,7 @@ static NSString * const API_URL_TRIPS_FORMAT = @"http://reiseauskunft.bahn.de/bi
         dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"CET"];
     });
     
-    // bahn.de doesn't use daylight saving
-    NSDate *dateWithoutDaylightSaving = [date dateByAddingTimeInterval:-dateFormatter.timeZone.daylightSavingTimeOffset];
-    return [dateFormatter stringFromDate:dateWithoutDaylightSaving];
+    return [dateFormatter stringFromDate:date];
 }
 
 + (NSString *)stringFromLocation:(CCHTransportLocation *)location
