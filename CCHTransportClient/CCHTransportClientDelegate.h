@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol CCHTransportClient;
 
 @protocol CCHTransportClientDelegate <NSObject>
@@ -17,3 +19,5 @@
 - (void)transportClientDidFinishRequest:(NSObject<CCHTransportClient> *)transportClient;
 
 @end
+
+NS_ASSUME_NONNULL_END
