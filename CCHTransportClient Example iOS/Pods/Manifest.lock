@@ -1,6 +1,6 @@
 PODS:
-  - CCHBinaryData (1.0.0)
-  - CCHTransportClient (1.0):
+  - CCHBinaryData (1.0.1)
+  - CCHTransportClient (1.0.0):
     - CCHBinaryData (~> 1.0.0)
     - GZIP (~> 1.0.0)
     - Ono (~> 1.1.0)
@@ -12,12 +12,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   CCHTransportClient:
-    :path: ..
+    :path: ".."
 
 SPEC CHECKSUMS:
-  CCHBinaryData: 7977a7e3b0a557bfaa98876c5c27033f39d1b8ca
-  CCHTransportClient: 14f2aae23deea2ee5c7168858a7dc9ccb6e17603
-  GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Ono: cf5cb37c76225200d6f063e4189c15b4b6c9d5fe
+  CCHBinaryData: c9cb346a5d8fa0fcc3c840184cdb8fd8aafe4dc6
+  CCHTransportClient: efb2620c4ad7f55777aa88eca22fb8b86346c85a
+  GZIP: f0863fda354e8f83316508c0a2c7bbe385e39129
+  Ono: 49c7cc7e513718fe6c2a1f87fea80ea9272d0216
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.4

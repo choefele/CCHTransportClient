@@ -1,0 +1,34 @@
+{
+  "name": "CCHTransportClient",
+  "version": "1.0.0",
+  "license": "Copyright Claus Höfele",
+  "summary": "Objective-C implementation of various transportation APIs.",
+  "homepage": "https://github.com/optionu/CCHTransportClient",
+  "authors": {
+    "Claus Höfele": "claus@claushoefele.com"
+  },
+  "social_media_url": "https://twitter.com/claushoefele",
+  "source": {
+    "git": "https://github.com/optionu/CCHTransportClient.git",
+    "tag": "1.0.0"
+  },
+  "frameworks": "CoreLocation",
+  "requires_arc": true,
+  "dependencies": {
+    "Ono": [
+      "~> 1.1.0"
+    ],
+    "CCHBinaryData": [
+      "~> 1.0.0"
+    ],
+    "GZIP": [
+      "~> 1.0.0"
+    ]
+  },
+  "platforms": {
+    "ios": "7.0",
+    "osx": "10.9"
+  },
+  "source_files": "CCHTransportClient/**/*.{h,m}",
+  "private_header_files": "CCHTransportClient/de.bahn/{*Generator, *Parser, CCHTransportDEBahnClientUtils}.h, CCHTransportClient/de.vbb/{*Generator, *Parser, CCHTransportDEVBBClientUtils}.h"
+}

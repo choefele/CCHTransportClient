@@ -16,7 +16,7 @@
 			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
-Copyright (c) 2014 Claus Höfele
+Copyright (c) 2014 Claus H&#246;fele
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -38,6 +38,14 @@ SOFTWARE.
 </string>
 			<key>Title</key>
 			<string>CCHBinaryData</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (c) 2014 Claus H&#246;fele</string>
+			<key>Title</key>
+			<string>CCHTransportClient</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
