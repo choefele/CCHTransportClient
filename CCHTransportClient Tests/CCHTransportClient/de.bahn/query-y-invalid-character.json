@@ -1,0 +1,136 @@
+{ "prods":"111111111111111111",
+"stops":
+[
+{
+"x" : "13187930",
+"y" : "52405861"
+,"name" : "Albert-Einstein-Ring, Kleinmachnow"
+,"urlname" : "Albert-Einstein-Ring,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735248"
+,"puic":"80"
+,"dist" : "55"
+,"planId":"1429652675"
+,"stopweight":"1324"
+}
+,
+{
+"x" : "13185368",
+"y" : "52403695"
+,"name" : "Heinrich-Hertz-Str., Kleinmachnow"
+,"urlname" : "Heinrich-Hertz-Str.,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"744944"
+,"puic":"80"
+,"dist" : "328"
+,"planId":"1429652675"
+,"stopweight":"1324"
+}
+,
+{
+"x" : "13194124",
+"y" : "52406958"
+,"name" : "Julius Kühn-Institut, Kleinmachnow"
+,"urlname" : "Julius%20K%FChn-Institut,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"728106"
+,"puic":"80"
+,"dist" : "448"
+,"planId":"1429652675"
+,"stopweight":"1324"
+}
+,
+{
+"x" : "13191580",
+"y" : "52401133"
+,"name" : "Fahrenheitstr., Kleinmachnow"
+,"urlname" : "Fahrenheitstr.,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"749552"
+,"puic":"80"
+,"dist" : "637"
+,"planId":"1429652675"
+,"stopweight":"310"
+}
+,
+{
+"x" : "13178680",
+"y" : "52401735"
+,"name" : "Lindenbahn, Kleinmachnow"
+,"urlname" : "Lindenbahn,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735244"
+,"puic":"80"
+,"dist" : "791"
+,"planId":"1429652675"
+,"stopweight":"310"
+}
+,
+{
+"x" : "13175732",
+"y" : "52405016"
+,"name" : "Dreilinden, Kleinmachnow"
+,"urlname" : "Dreilinden,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735241"
+,"puic":"80"
+,"dist" : "818"
+,"planId":"1429652675"
+,"stopweight":"310"
+}
+,
+{
+"x" : "13201890",
+"y" : "52402688"
+,"name" : "Heidefeld\/Stahnsdorfer Damm, Kleinmachnow"
+,"urlname" : "Heidefeld%2FStahnsdorfer%20Damm,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"728233"
+,"puic":"80"
+,"dist" : "1050"
+,"planId":"1429652675"
+,"stopweight":"1324"
+}
+,
+{
+"x" : "13200344",
+"y" : "52400063"
+,"name" : "Eichhörnchenweg, Kleinmachnow"
+,"urlname" : "Eichh%F6rnchenweg,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735274"
+,"puic":"80"
+,"dist" : "1110"
+,"planId":"1429652675"
+,"stopweight":"1324"
+}
+,
+{
+"x" : "13204389",
+"y" : "52409385"
+,"name" : "Märkische Heide, Kleinmachnow"
+,"urlname" : "M%E4rkische%20Heide,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735262"
+,"puic":"80"
+,"dist" : "1189"
+,"planId":"1429652675"
+,"stopweight":"310"
+}
+,
+{
+"x" : "13205585",
+"y" : "52404846"
+,"name" : "Heidefeld\/Schleusenweg, Kleinmachnow"
+,"urlname" : "Heidefeld%2FSchleusenweg,%20Kleinmachnow"
+,"prodclass" : "32"
+,"extId":"735261"
+,"puic":"80"
+,"dist" : "1231"
+,"planId":"1429652675"
+,"stopweight":"310"
+}
+]
+,"error" : "0"
+,"numberofstops": "10"
+}

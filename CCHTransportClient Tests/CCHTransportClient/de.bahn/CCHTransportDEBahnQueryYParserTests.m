@@ -42,4 +42,17 @@
     XCTAssertEqualObjects(station.stationID, @"728658");
 }
 
+- (void)testParseStationsInvalidCharacter
+{
+    NSData *data = [self.class loadDataWithFileName:@"query-y-invalid-character" ofType:@"json"];
+    NSArray *stations = [self.parser parseResponseWithData:data];
+    XCTAssertEqual(stations.count, 3);
+    
+    CCHTransportStation *station = stations[0];
+    XCTAssertEqualWithAccuracy(station.coordinate.latitude, 52.52318, FLT_EPSILON);
+    XCTAssertEqualWithAccuracy(station.coordinate.longitude, 13.413946, FLT_EPSILON);
+    XCTAssertEqualObjects(station.name, @"Alexanderplatz [Bus] (U), Berlin");
+    XCTAssertEqualObjects(station.stationID, @"728658");
+}
+
 @end

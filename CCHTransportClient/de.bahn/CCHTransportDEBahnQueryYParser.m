@@ -14,7 +14,8 @@
 
 - (NSArray *)parseResponseWithData:(NSData *)data
 {
-    NSDictionary *dataAsJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+    NSError *error;
+    NSDictionary *dataAsJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
     
     NSMutableArray *stations = [NSMutableArray array];
     NSArray *stationsAsJSON = dataAsJSON[@"stops"];
