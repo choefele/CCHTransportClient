@@ -46,13 +46,10 @@
 {
     NSData *data = [self.class loadDataWithFileName:@"query-y-invalid-character" ofType:@"json"];
     NSArray *stations = [self.parser parseResponseWithData:data];
-    XCTAssertEqual(stations.count, 3);
+    XCTAssertEqual(stations.count, 10);
     
-    CCHTransportStation *station = stations[0];
-    XCTAssertEqualWithAccuracy(station.coordinate.latitude, 52.52318, FLT_EPSILON);
-    XCTAssertEqualWithAccuracy(station.coordinate.longitude, 13.413946, FLT_EPSILON);
-    XCTAssertEqualObjects(station.name, @"Alexanderplatz [Bus] (U), Berlin");
-    XCTAssertEqualObjects(station.stationID, @"728658");
+    CCHTransportStation *station = stations[2];
+    XCTAssertEqualObjects(station.name, @"Julius Kühn-Institut, Kleinmachnow");
 }
 
 @end

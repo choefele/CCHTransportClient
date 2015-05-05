@@ -14,8 +14,10 @@
 
 - (NSArray *)parseResponseWithData:(NSData *)data
 {
-    NSError *error;
-    NSDictionary *dataAsJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    // Convert from ISO 8859-1 to UTF-8
+    NSString *dataAsString = [[NSString alloc] initWithData:data encoding:NSISOLatin1StringEncoding];
+    NSData *dataAsUTF8 = [dataAsString dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dataAsJSON = [NSJSONSerialization JSONObjectWithData:dataAsUTF8 options:0 error:NULL];
     
     NSMutableArray *stations = [NSMutableArray array];
     NSArray *stationsAsJSON = dataAsJSON[@"stops"];
