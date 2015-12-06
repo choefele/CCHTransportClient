@@ -308,6 +308,7 @@
 				626152A71A7FBD9F00AD84CA /* Resources */,
 				8238E9B391154EA5424C014E /* Copy Pods Resources */,
 				62B052611A7FC7ED00D0024C /* Embed Frameworks */,
+				85C8CB2E05044584BBDBB388 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +328,7 @@
 				62B052641A7FC83000D0024C /* Frameworks */,
 				62B052651A7FC83000D0024C /* Resources */,
 				38AFA11A8AA8DF4DE4082E77 /* Copy Pods Resources */,
+				5EA2489012504D5E7F8D864A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +437,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5EA2489012504D5E7F8D864A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7FA548CC857D04C8A1FD9F1E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +480,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C8CB2E05044584BBDBB388 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		874603FA395BF053F1E5FFD2 /* Check Pods Manifest.lock */ = {
@@ -653,10 +685,6 @@
 			baseConfigurationReference = AA96AF0E29E4C5011372B81F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -674,10 +702,6 @@
 			baseConfigurationReference = 81A1AE6279FEEBDF0D34834B /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = "CCHTransportClient Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.claushoefele.$(PRODUCT_NAME:rfc1034identifier)";
