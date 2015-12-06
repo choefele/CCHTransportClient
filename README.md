@@ -44,7 +44,7 @@ CCHTransportLocation *to = [[CCHTransportLocation alloc] initWithName:nil coordi
 }];
 ```
 
-### License (MIT)
+## License (MIT)
 
 Copyright (C) 2015 Claus Höfele
 
