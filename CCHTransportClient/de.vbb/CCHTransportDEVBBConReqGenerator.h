@@ -14,6 +14,7 @@
 
 @interface CCHTransportDEVBBConReqGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithAccessID:(NSString *)accessID date:(NSDate *)date fromLocation:(CCHTransportLocation *)fromLocation toLocation:(CCHTransportLocation *)toLocation maxNumberOfResults:(NSUInteger)maxNumberOfResults NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

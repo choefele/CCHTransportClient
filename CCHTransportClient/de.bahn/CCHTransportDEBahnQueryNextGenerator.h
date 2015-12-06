@@ -12,6 +12,7 @@
 
 @interface CCHTransportDEBahnQueryNextGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithContext:(NSString *)context laterTrips:(BOOL)laterTrips NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

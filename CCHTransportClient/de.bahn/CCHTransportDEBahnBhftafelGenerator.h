@@ -12,6 +12,7 @@
 
 @interface CCHTransportDEBahnBhftafelGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithDate:(NSDate *)date stationID:(NSString *)stationID maxNumberOfResults:(NSUInteger)maxNumberOfResults NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

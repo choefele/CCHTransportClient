@@ -15,6 +15,7 @@
 
 @interface CCHTransportDEBahnQueryGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithDate:(NSDate *)date fromLocation:(CCHTransportLocation *)fromLocation toLocation:(CCHTransportLocation *)toLocation transportModeMask:(CCHTransportClientMode)transportModeMask NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

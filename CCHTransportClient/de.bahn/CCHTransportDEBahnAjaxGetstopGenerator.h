@@ -12,6 +12,7 @@
 
 @interface CCHTransportDEBahnAjaxGetstopGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithSearchString:(NSString *)searchString maxNumberOfResults:(NSUInteger)maxNumberOfResults NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

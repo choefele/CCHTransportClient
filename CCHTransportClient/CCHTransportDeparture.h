@@ -17,6 +17,7 @@
 @property (nonatomic, readonly) CCHTransportEvent *event;
 @property (nonatomic, readonly) CCHTransportService *service;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithMessage:(NSString *)message
                           event:(CCHTransportEvent *)event
                         service:(CCHTransportService *)service NS_DESIGNATED_INITIALIZER;

@@ -13,6 +13,7 @@
 @property (nonatomic, copy, readonly) NSArray *legs;    // CCHTransportTripLeg
 @property (nonatomic, readonly) NSUInteger numberOfChanges;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithLegs:(NSArray *)legs NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 

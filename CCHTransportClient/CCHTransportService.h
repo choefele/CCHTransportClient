@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, CCHTransportServiceDirection) {
 @property (nonatomic, copy, readonly) NSString *directionName;
 @property (nonatomic, readonly) CCHTransportServiceDirection direction;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithName:(NSString *)name transportMode:(CCHTransportServiceMode)transportMode directionName:(NSString *)directionName direction:(CCHTransportServiceDirection)direction NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 

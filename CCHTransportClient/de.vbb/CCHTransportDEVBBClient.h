@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CCHTransportDEVBBClient : NSObject<CCHTransportClient>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithAccessID:(NSString *)accessID NS_DESIGNATED_INITIALIZER;
 
 - (NSURLSessionTask *)retrieveDeparturesForDate:(nullable NSDate *)date stationID:(NSString *)stationID maxNumberOfResults:(NSUInteger)maxNumberOfResults completionHandler:(void (^)(NSArray * __nullable departures, NSError * __nullable error))completionHandler;

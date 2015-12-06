@@ -12,6 +12,7 @@
 
 @interface CCHTransportDEVBBSTBReqGenerator : NSObject<CCHTransportGenerator>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithAccessID:(NSString *)accessID date:(NSDate *)date stationID:(NSString *)stationID maxNumberOfResults:(NSUInteger)maxNumberOfResults NS_DESIGNATED_INITIALIZER;
 - (NSURLRequest *)generateRequest;
 

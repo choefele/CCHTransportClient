@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) NSTimeInterval delay;
 @property (nonatomic, copy, readonly) NSString *delayPlatform;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithDate:(NSDate *)date
                     platform:(NSString *)platform
                        delay:(NSTimeInterval)delay

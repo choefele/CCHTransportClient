@@ -393,6 +393,10 @@
 		97B76591B73B0FD23A50FEEA /* de.bahn */ = {
 			isa = PBXGroup;
 			children = (
+				4B740909F7910440840BB1FC /* CCHTransportDEBahnClient.h */,
+				D500958CB6347F4E9E58CBE4 /* CCHTransportDEBahnClient.m */,
+				ADBA26E554240F6DF7BC48D2 /* CCHTransportDEBahnClientUtils.h */,
+				50941A8CB359BE5A28C7B496 /* CCHTransportDEBahnClientUtils.m */,
 				707D9F28D168A977DED811BB /* CCHTransportDEBahnAjaxGetstopGenerator.h */,
 				D8FA2D9E2DFAB1D8C890A2FB /* CCHTransportDEBahnAjaxGetstopGenerator.m */,
 				B408089196A9778BA799D702 /* CCHTransportDEBahnAjaxGetstopParser.h */,
@@ -401,10 +405,6 @@
 				AA9BCACA05B8E8BBADCB77CA /* CCHTransportDEBahnBhftafelGenerator.m */,
 				ACADECE7CC54B9E99CFA76E5 /* CCHTransportDEBahnBhftafelParser.h */,
 				20A4B49DA822627FD6722F1D /* CCHTransportDEBahnBhftafelParser.m */,
-				4B740909F7910440840BB1FC /* CCHTransportDEBahnClient.h */,
-				D500958CB6347F4E9E58CBE4 /* CCHTransportDEBahnClient.m */,
-				ADBA26E554240F6DF7BC48D2 /* CCHTransportDEBahnClientUtils.h */,
-				50941A8CB359BE5A28C7B496 /* CCHTransportDEBahnClientUtils.m */,
 				6D24AFF35A41E1D627C0A156 /* CCHTransportDEBahnQueryGenerator.h */,
 				4FAD206EFD0158BCD12EA9BC /* CCHTransportDEBahnQueryGenerator.m */,
 				008C449E32EAB73A3F682B53 /* CCHTransportDEBahnQueryNextGenerator.h */,
