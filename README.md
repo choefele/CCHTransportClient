@@ -21,8 +21,12 @@ pod "CCHTransportClient"
 ## Current Implementations
 API | Departures for date | Stations near coordinate | Stations for search string | Trips for date
 --- | :-----------------: | :----------------------: | :------------------------: | :------------:
-[bahn.de](http://reiseauskunft.bahn.de) | Yes | Yes | Yes | Yes
-[VBB](http://www.vbb.de/de/article/webservices/schnittstellen-fuer-webentwickler/5070.html#rest-schnittstelle) | Yes | | | Yes
+[bahn.de](http://reiseauskunft.bahn.de) [1] | Yes | Yes | Yes | Yes
+[VBB](http://www.vbb.de/de/article/webservices/schnittstellen-fuer-webentwickler/5070.html#rest-schnittstelle) [2] | Yes | | | Yes
+
+[1]: Covers Germany and some parts of Europe
+
+[2]: Covers the German states Berlin and Brandenburg. [Requires access ID to use](http://www.vbb.de/de/article/webservices/schnittstellen-fuer-webentwickler/5070.html#testserver).
 
 ## Example
 
