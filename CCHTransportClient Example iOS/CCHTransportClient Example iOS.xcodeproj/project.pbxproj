@@ -130,6 +130,7 @@
 		62B0529A1A7FC87800D0024C /* STBRes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = STBRes.xml; sourceTree = "<group>"; };
 		62B0529B1A7FC87800D0024C /* XCTestCase+CCHTransportClientUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+CCHTransportClientUtils.h"; path = "../../CCHTransportClient Tests/XCTestCase+CCHTransportClientUtils.h"; sourceTree = "<group>"; };
 		62B0529C1A7FC87800D0024C /* XCTestCase+CCHTransportClientUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+CCHTransportClientUtils.m"; path = "../../CCHTransportClient Tests/XCTestCase+CCHTransportClientUtils.m"; sourceTree = "<group>"; };
+		62D4D73D1C14B9B200AF025F /* CCHTransportClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCHTransportClient-Bridging-Header.h"; sourceTree = "<group>"; };
 		81A1AE6279FEEBDF0D34834B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA96AF0E29E4C5011372B81F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E47BB0FCCFC315B4EE71D827 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				626152AD1A7FBD9F00AD84CA /* Info.plist */,
+				62D4D73D1C14B9B200AF025F /* CCHTransportClient-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -665,6 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.claushoefele.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CCHTransportClient Example iOS/CCHTransportClient-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -677,6 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.claushoefele.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CCHTransportClient Example iOS/CCHTransportClient-Bridging-Header.h";
 			};
 			name = Release;
 		};

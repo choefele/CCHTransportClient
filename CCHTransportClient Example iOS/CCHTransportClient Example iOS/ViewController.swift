@@ -8,18 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    let transportClient = CCHTransportDEBahnClient()
+    var departures: [CCHTransportDeparture]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Departures Berlin-Friedrichstraße";
+        self.transportClient.retrieveDeparturesForDate(nil, stationID: "0732531", maxNumberOfResults: 10) { [unowned self] departures, error in
+            self.departures = departures as? [CCHTransportDeparture]
+            self.tableView.reloadData()
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension ViewController {
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        if let departure = departures?[indexPath.row] {
+            cell.textLabel?.text = departure.service.name
+            cell.detailTextLabel?.text = ViewController.stringForDate(departure.event.date)
+        }
+
+        return cell
     }
-
-
+    
+    private static func stringForDate(date: NSDate) -> String {
+        let dateFormatter = NSDateFormatter()
+        
+        let theDateFormat = NSDateFormatterStyle.ShortStyle
+        let theTimeFormat = NSDateFormatterStyle.ShortStyle
+        
+        dateFormatter.dateStyle = theDateFormat
+        dateFormatter.timeStyle = theTimeFormat
+        
+        return dateFormatter.stringFromDate(date)
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return departures?.count ?? 0
+    }
+    
 }
 
