@@ -51,7 +51,7 @@ API | Departures for date | Stations near coordinate | Stations for search strin
 
 ## Example
 
-```
+```Objective-C
 CCHTransportDEBahnClient *transportClient = [[CCHTransportDEBahnClient alloc] init];    
 CCHTransportLocation *from = [[CCHTransportLocation alloc] initWithName:nil coordinate:CLLocationCoordinate2DMake(52.519953, 13.348262)];
 CCHTransportLocation *to = [[CCHTransportLocation alloc] initWithName:nil coordinate:CLLocationCoordinate2DMake(52.421053, 13.179336)];
