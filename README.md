@@ -24,7 +24,7 @@ API | Departures for date | Stations near coordinate | Stations for search strin
 [bahn.de](http://reiseauskunft.bahn.de) [1] | Yes | Yes | Yes | Yes
 [VBB](http://www.vbb.de/de/article/webservices/schnittstellen-fuer-webentwickler/5070.html#rest-schnittstelle) [2] | Yes | | | Yes
 
-[1]: Covers Germany and some parts of Europe
+[1]: Covers public transport in Germany and some parts of Europe; inofficial API.
 
 [2]: Covers the German states Berlin and Brandenburg. [Requires access ID to use](http://www.vbb.de/de/article/webservices/schnittstellen-fuer-webentwickler/5070.html#testserver).
 
