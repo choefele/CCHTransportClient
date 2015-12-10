@@ -18,6 +18,27 @@ platform :osx, '10.9'
 pod "CCHTransportClient"
 ```
 
+On iOS 9 and later, you have to configure exceptions to your app's [application transport security settings](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33) because some of the REST endpoints don't use secure connections:
+
+```XML
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSExceptionDomains</key>
+	<dict>
+		<key>demo.hafas.de</key>
+		<dict>
+			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+		</dict>
+		<key>reiseauskunft.bahn.de</key>
+		<dict>
+			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+```
+
 ## Current Implementations
 API | Departures for date | Stations near coordinate | Stations for search string | Trips for date
 --- | :-----------------: | :----------------------: | :------------------------: | :------------:
@@ -31,19 +52,15 @@ API | Departures for date | Stations near coordinate | Stations for search strin
 ## Example
 
 ```
-CCHTransportClient *transportClient = [[CCHTransportDEBahnClient alloc] init];
-
-// [[STATION 8089005 52519953/13348262 null "Berlin Bellevue"]
+CCHTransportDEBahnClient *transportClient = [[CCHTransportDEBahnClient alloc] init];    
 CCHTransportLocation *from = [[CCHTransportLocation alloc] initWithName:nil coordinate:CLLocationCoordinate2DMake(52.519953, 13.348262)];
-  
-// [[STATION 8010405 52421053/13179336 null "Berlin Wannsee"]
 CCHTransportLocation *to = [[CCHTransportLocation alloc] initWithName:nil coordinate:CLLocationCoordinate2DMake(52.421053, 13.179336)];
   
-[self.transportClient retrieveTripsForDate:nil fromLocation:from toLocation:to transportModeMask:CCHTransportClientModeAll maxNumberOfResults:10 completionHandler:^(NSArray *trips, id context, NSError *error) {
+[transportClient retrieveTripsForDate:nil fromLocation:from toLocation:to transportModeMask:CCHTransportClientModeAll maxNumberOfResults:10 completionHandler:^(NSArray *trips, id context, NSError *error) {
     if (trips.count > 0) {
         CCHTransportTrip *trip = trips[0];
         CCHTransportTripLeg *tripLeg = trip.legs[0];
-        ...
+        // ...
     }
 }];
 ```
