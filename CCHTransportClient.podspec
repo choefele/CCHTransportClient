@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
   spec.name     = 'CCHTransportClient'
-  spec.version  = '1.0.0'
+  spec.version  = '1.1.0'
   spec.license  = 'Copyright Claus Höfele'
-  spec.summary  = 'Objective-C implementation of various transportation APIs.'
-  spec.homepage = 'https://github.com/optionu/CCHTransportClient'
+  spec.summary  = 'Real-time data from various transportation APIs for iOS and OS X'
+  spec.homepage = 'https://github.com/choefele/CCHTransportClient'
   spec.authors  = { 'Claus Höfele' => 'claus@claushoefele.com' }
   spec.social_media_url = 'https://twitter.com/claushoefele'
-  spec.source   = { :git => 'https://github.com/optionu/CCHTransportClient.git', :tag => spec.version.to_s }
+  spec.source   = { :git => 'https://github.com/choefele/CCHTransportClient.git', :tag => spec.version.to_s }
   spec.frameworks = 'CoreLocation'
   spec.requires_arc = true
 
