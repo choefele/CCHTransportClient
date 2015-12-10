@@ -18,5 +18,5 @@ Pod::Spec.new do |spec|
   spec.osx.deployment_target = '10.9'
 
   spec.source_files = 'CCHTransportClient/**/*.{h,m}'
-  spec.private_header_files = 'CCHTransportClient/de.bahn/{*Generator, *Parser, CCHTransportDEBahnClientUtils}.h, CCHTransportClient/de.vbb/{*Generator, *Parser, CCHTransportDEVBBClientUtils}.h'
+  spec.private_header_files = 'CCHTransportClient/de.bahn/{*Generator, *Parser, CCHTransportDEBahnClientUtils}.h', 'CCHTransportClient/de.vbb/{*Generator, *Parser, CCHTransportDEVBBClientUtils}.h'
 end
