@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '65B3D52CDA92034D49FA658C'
+               BlueprintIdentifier = 'DD5E6EE5F121363AC9383774'
                BlueprintName = 'CCHTransportClient'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libCCHTransportClient.a'>

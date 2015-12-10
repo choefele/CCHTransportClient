@@ -20,7 +20,6 @@
 		291CDE787A17BC17F1DD991D705E4F3C /* CCHTransportTripLeg.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FC3DC592AD094B703FF453FC756577 /* CCHTransportTripLeg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		293819902E05DC00A87E63DDEFFFBDB5 /* CCHTransportDEVBBSTBResParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C410C34BE95966CE19FD5AAB03A659E /* CCHTransportDEVBBSTBResParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C355FCAB3503D6BE840E4CD0904D2D /* CCHTransportDEBahnQueryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B341C7F59ADE5262A53E39EB52CF00 /* CCHTransportDEBahnQueryParser.m */; };
-		388C3371B99C47FE1C64A9FA1139656C /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = BE096AF66D8579025FB70E44D96221B9 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB787589AEA1423CB1A92038D88EE6D /* CCHTransportService.h in Headers */ = {isa = PBXBuildFile; fileRef = B005E71B771637822F654B05CF9FF9D5 /* CCHTransportService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D9F469D8F28AF67EF03882320AF8A44 /* CCHTransportDEVBBClientUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C2C5949884BCDAC1632315475EC4AB /* CCHTransportDEVBBClientUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E8D4FAE3F034E6428434C95F3A064BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA848EA68D9565CB8B38A31CFCA55B /* Foundation.framework */; };
@@ -54,7 +53,6 @@
 		AC55ADB8E701AD9B6203A4467132F0E8 /* CCHTransportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94820CF9C875D9C0175F91DAACAB9E /* CCHTransportEvent.m */; };
 		AE19BB99AC9C5944366D69AA55ADD18C /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7094379B0B5E6D58EEDFD93494A918 /* GZIP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEC12BE92D2138F904CF734F93D606BE /* CCHTransportDEBahnBhftafelParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EA03031990F2607CD81BEA07677228 /* CCHTransportDEBahnBhftafelParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B28F2B679C06AD679D714E16C011E2D0 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CDBD4DF15A42BB254A03FDD37DCDA /* ONOXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B4246CEC4463E6DF54B78D0A7C2E4D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA848EA68D9565CB8B38A31CFCA55B /* Foundation.framework */; };
 		B6050885D5496C960DC44BC10B062C8A /* CCHTransportDEBahnQueryYParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C9A5F2C05A5A2315EB418B2E022B6 /* CCHTransportDEBahnQueryYParser.m */; };
 		B6050E9FE1B989CC961A5D02A4EEE3F0 /* CCHTransportDEVBBConReqGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B3D8A018B6F257E7E4349119BC7B /* CCHTransportDEVBBConReqGenerator.m */; };
@@ -62,10 +60,10 @@
 		B88DCE94B3C2C16B3D5AD310E04F7245 /* CCHTransportDEVBBConReqGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3B8B3E98390BB60937B4362A9A682A /* CCHTransportDEVBBConReqGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA4CD7E16B4AC89809219298A32C9073 /* CCHTransportDEVBBSTBReqGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3A01A5DD286D1BA485F176E97CE4FA /* CCHTransportDEVBBSTBReqGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAAA5371205BE80228AD0C717F36EFBB /* CCHBinaryDataReader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA6899CB82115F8A4C3A0F00978DB11 /* CCHBinaryDataReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAEB70CD48308A8A2496FA138B3449D7 /* Ono-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 066ADA676517B3CFD4B986C92A15D0BE /* Ono-dummy.m */; };
+		BAEB70CD48308A8A2496FA138B3449D7 /* Ono-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B61A99E91EC28B15A5563B502FCBC2 /* Ono-dummy.m */; };
 		BC17F9B31F0DF48F561CCD77F51866F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA848EA68D9565CB8B38A31CFCA55B /* Foundation.framework */; };
+		BE6F968CFDE65F2005CBF7BDED2369B3 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF8F6D8DC3D36D19B20CB7CD166794 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C49A5BC32783EB7FB8A2B337216DC45E /* CCHTransportDEBahnBhftafelGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 133D360DD123E27017BF187CEBBECE3C /* CCHTransportDEBahnBhftafelGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE8FD75A39AC99ABB3320D7B1E779B13 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = 471184DF7E1753E9036A7B9B293E0166 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF7DFC2A21393A814C87C79245F9F31D /* CCHTransportDEBahnQueryYParser.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBD110DECEF0464C8051FC631BE80DD /* CCHTransportDEBahnQueryYParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D359BEADA0AD782C6BF1E91CD1B25EA2 /* CCHTransportDEBahnBhftafelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14D6421A0322AAED0BB2F2074C4772 /* CCHTransportDEBahnBhftafelParser.m */; };
 		D3DCACDDB61E9F422A94E4A07DE99FC0 /* CCHTransportTripLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C5A26475493FBE104949F873A1E6E9 /* CCHTransportTripLeg.m */; };
@@ -76,9 +74,11 @@
 		E27629E6FF5A336AFC40FCB535C314C0 /* CCHTransportDEBahnAjaxGetstopGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4678AC4C543EC955D81149EA632A8672 /* CCHTransportDEBahnAjaxGetstopGenerator.m */; };
 		E38604154F2A43CEE0804C4B5975DC41 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
 		E3E4C45131882903718BF0D98D5E9C74 /* CCHTransportClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C931ADB78EA2BC1A89F1D067E4C3BA /* CCHTransportClient-dummy.m */; };
+		E4E9F7F311240FC313BC529FCDE57AE9 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = 1677510609789053FC6F811D87ED6048 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E695B456BEAA38EB44E54EADBF07741A /* CCHTransportDEBahnQueryNextGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D356483CFF8F693C4EB9034D5786771 /* CCHTransportDEBahnQueryNextGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9AC268E9CFE09CC66CFCF815BB5E061 /* CCHTransportDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FFB9199C146B90745D4AD682876FB8 /* CCHTransportDeparture.m */; };
 		EDC9F8C895663ACB6F9C4C94B4A70D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA848EA68D9565CB8B38A31CFCA55B /* Foundation.framework */; };
+		EDFEC8FCDAE0CE44B48C1F61ACB760DC /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C385E6D5E5F8F47F8A97BC1D8ABF1123 /* ONOXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F2F2811B30F01159C96AD9CC0267FF40 /* CCHTransportDEBahnClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC05299DE9CBD81871B3FB81E95C31EE /* CCHTransportDEBahnClient.m */; };
 		FBB6902E43A768EE303EDF7D99D776AC /* CCHTransportDEBahnQueryNextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 780EEA07DD4B3417D941BB6B33784A65 /* CCHTransportDEBahnQueryNextGenerator.m */; };
 /* End PBXBuildFile section */
@@ -138,7 +138,7 @@
 /* Begin PBXFileReference section */
 		0026BF417CF20D487D15605D0C4FE73D /* CCHTransportParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportParser.h; sourceTree = "<group>"; };
 		012CDC337000C7E1EEE8B72F6D25BB43 /* libOno.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOno.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		066ADA676517B3CFD4B986C92A15D0BE /* Ono-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ono-dummy.m"; sourceTree = "<group>"; };
+		0834EE46AD521101C4D16DF8663E9E5D /* Ono.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ono.xcconfig; sourceTree = "<group>"; };
 		0999C70A6D1B79CB81339EB0AA4FEF18 /* CCHTransportDEBahnClientUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEBahnClientUtils.m; sourceTree = "<group>"; };
 		0B3B8B3E98390BB60937B4362A9A682A /* CCHTransportDEVBBConReqGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEVBBConReqGenerator.h; sourceTree = "<group>"; };
 		0BF56787EA28336EBFC536171F9B74B4 /* CCHBinaryData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHBinaryData.h; path = CCHBinaryData/CCHBinaryData.h; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 		0FB7AF12603CD1AA86AA007E23D294D1 /* CCHTransportDEBahnQueryGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnQueryGenerator.h; sourceTree = "<group>"; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		133D360DD123E27017BF187CEBBECE3C /* CCHTransportDEBahnBhftafelGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnBhftafelGenerator.h; sourceTree = "<group>"; };
+		1677510609789053FC6F811D87ED6048 /* Ono.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ono.h; path = Source/Ono.h; sourceTree = "<group>"; };
 		17AB7ABB3B8185780066035D9E2A8236 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D356483CFF8F693C4EB9034D5786771 /* CCHTransportDEBahnQueryNextGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnQueryNextGenerator.h; sourceTree = "<group>"; };
 		1F5F5CE62BE383E0BA38291D6FE5E083 /* CCHTransportDEBahnClientUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnClientUtils.h; sourceTree = "<group>"; };
@@ -156,7 +157,6 @@
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		291EA2E1B630DFE9FBC003855CBD814F /* GZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GZIP.h; path = GZIP/GZIP.h; sourceTree = "<group>"; };
 		29C2C5949884BCDAC1632315475EC4AB /* CCHTransportDEVBBClientUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEVBBClientUtils.h; sourceTree = "<group>"; };
-		2AC97504DBDD97B836DCC9039CD52B32 /* Ono-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ono-prefix.pch"; sourceTree = "<group>"; };
 		2BEDC90644F0288C443B75B27F390856 /* CCHTransportTrip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportTrip.h; sourceTree = "<group>"; };
 		2C94820CF9C875D9C0175F91DAACAB9E /* CCHTransportEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportEvent.m; sourceTree = "<group>"; };
 		2E9513F50091AF24555C7533F2E815C6 /* CCHTransportClientController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportClientController.h; sourceTree = "<group>"; };
@@ -166,11 +166,9 @@
 		3AE354E8007176A0654D6CCD5F7BF0B5 /* CCHTransportLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportLocation.m; sourceTree = "<group>"; };
 		3FCC1C17F8670B5686FA56EA21982BE7 /* CCHTransportGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportGenerator.h; sourceTree = "<group>"; };
 		4678AC4C543EC955D81149EA632A8672 /* CCHTransportDEBahnAjaxGetstopGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEBahnAjaxGetstopGenerator.m; sourceTree = "<group>"; };
-		471184DF7E1753E9036A7B9B293E0166 /* Ono.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ono.h; path = Ono/Ono.h; sourceTree = "<group>"; };
 		4DA8A5DDE02470D1E4DF2FE2017735C2 /* CCHTransportDEBahnQueryParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnQueryParser.h; sourceTree = "<group>"; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		5123FA2F005897A115E58FE81175DE20 /* CCHBinaryDataReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHBinaryDataReader.m; path = CCHBinaryData/CCHBinaryDataReader.m; sourceTree = "<group>"; };
-		52B26B22189984EE24143AF232903B61 /* Ono.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ono.xcconfig; sourceTree = "<group>"; };
 		5354B3D8A018B6F257E7E4349119BC7B /* CCHTransportDEVBBConReqGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEVBBConReqGenerator.m; sourceTree = "<group>"; };
 		58EA03031990F2607CD81BEA07677228 /* CCHTransportDEBahnBhftafelParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnBhftafelParser.h; sourceTree = "<group>"; };
 		5C410C34BE95966CE19FD5AAB03A659E /* CCHTransportDEVBBSTBResParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEVBBSTBResParser.h; sourceTree = "<group>"; };
@@ -202,19 +200,21 @@
 		A8F9818176A178006A5B79D09B622F62 /* CCHTransportClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportClient.h; sourceTree = "<group>"; };
 		AC05299DE9CBD81871B3FB81E95C31EE /* CCHTransportDEBahnClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEBahnClient.m; sourceTree = "<group>"; };
 		AC07896F8EA46D0DEBE7ED30BC5F02F5 /* CCHTransportClientController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportClientController.m; sourceTree = "<group>"; };
+		AD5A6D4472F3697DFFE588D3203C3B33 /* Ono-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ono-prefix.pch"; sourceTree = "<group>"; };
 		AEA6899CB82115F8A4C3A0F00978DB11 /* CCHBinaryDataReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHBinaryDataReader.h; path = CCHBinaryData/CCHBinaryDataReader.h; sourceTree = "<group>"; };
 		AF3A01A5DD286D1BA485F176E97CE4FA /* CCHTransportDEVBBSTBReqGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEVBBSTBReqGenerator.h; sourceTree = "<group>"; };
 		B005E71B771637822F654B05CF9FF9D5 /* CCHTransportService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportService.h; sourceTree = "<group>"; };
 		B304D09AEFDBC659A61F0E5A28456264 /* CCHTransportDeparture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDeparture.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC1F3E3D5CBDE9D022FFE559546A0218 /* CCHTransportDEBahnAjaxGetstopGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnAjaxGetstopGenerator.h; sourceTree = "<group>"; };
-		BE096AF66D8579025FB70E44D96221B9 /* ONOXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ONOXMLDocument.h; path = Ono/ONOXMLDocument.h; sourceTree = "<group>"; };
 		C1928DB25EF084B0211518FEF6D651AA /* CCHTransportDEBahnQueryGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEBahnQueryGenerator.m; sourceTree = "<group>"; };
-		C76CDBD4DF15A42BB254A03FDD37DCDA /* ONOXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ONOXMLDocument.m; path = Ono/ONOXMLDocument.m; sourceTree = "<group>"; };
+		C385E6D5E5F8F47F8A97BC1D8ABF1123 /* ONOXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ONOXMLDocument.m; path = Source/ONOXMLDocument.m; sourceTree = "<group>"; };
 		CAFA848EA68D9565CB8B38A31CFCA55B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2013A8EF30F58CB043A7C6009EF1F3B /* CCHTransportStation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportStation.h; sourceTree = "<group>"; };
 		D2079D041F814A9310D4A2D5FF46B6A3 /* CCHTransportDEVBBClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEVBBClient.h; sourceTree = "<group>"; };
+		D5AF8F6D8DC3D36D19B20CB7CD166794 /* ONOXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ONOXMLDocument.h; path = Source/ONOXMLDocument.h; sourceTree = "<group>"; };
 		D6EC578F94A19454FF9832E27676AEB1 /* CCHTransportDEVBBSTBReqGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEVBBSTBReqGenerator.m; sourceTree = "<group>"; };
+		D9B61A99E91EC28B15A5563B502FCBC2 /* Ono-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ono-dummy.m"; sourceTree = "<group>"; };
 		DA0A4886E80531CE76C1CD17C04DE2FE /* CCHTransportDEBahnQueryYGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CCHTransportDEBahnQueryYGenerator.h; sourceTree = "<group>"; };
 		DDFAE15F92F5B5223FFE6042800FA6E9 /* CCHTransportDEVBBClientUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CCHTransportDEVBBClientUtils.m; sourceTree = "<group>"; };
 		E7ECDA157669D54E8B39165192246E4D /* libCCHBinaryData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCHBinaryData.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,17 +298,6 @@
 			);
 			name = "Support Files";
 			path = "CCHTransportClient Example iOS/Pods/Target Support Files/CCHTransportClient";
-			sourceTree = "<group>";
-		};
-		1F154E636A899580D750E12A7431F3B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				52B26B22189984EE24143AF232903B61 /* Ono.xcconfig */,
-				066ADA676517B3CFD4B986C92A15D0BE /* Ono-dummy.m */,
-				2AC97504DBDD97B836DCC9039CD52B32 /* Ono-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Ono";
 			sourceTree = "<group>";
 		};
 		2995E91842358CDC2101A2583D213384 /* Support Files */ = {
@@ -401,12 +390,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		9C78C19F797F1986821290B6B2E1BBFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0834EE46AD521101C4D16DF8663E9E5D /* Ono.xcconfig */,
+				D9B61A99E91EC28B15A5563B502FCBC2 /* Ono-dummy.m */,
+				AD5A6D4472F3697DFFE588D3203C3B33 /* Ono-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Ono";
+			sourceTree = "<group>";
+		};
 		ACBF875A9E8F373258CA58A2C1AFFDBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BB2CCF67CEE7606CF5F6B52DA7C79068 /* CCHBinaryData */,
 				3EEE6972F133F86C4256D7DE0ABEB71C /* GZIP */,
-				D4242F826666DF460A4F84959BD433AA /* Ono */,
+				B976F5FDB073E270D8F6BA2B724F945C /* Ono */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -453,6 +453,17 @@
 				3A6C9A5F2C05A5A2315EB418B2E022B6 /* CCHTransportDEBahnQueryYParser.m */,
 			);
 			path = de.bahn;
+			sourceTree = "<group>";
+		};
+		B976F5FDB073E270D8F6BA2B724F945C /* Ono */ = {
+			isa = PBXGroup;
+			children = (
+				1677510609789053FC6F811D87ED6048 /* Ono.h */,
+				D5AF8F6D8DC3D36D19B20CB7CD166794 /* ONOXMLDocument.h */,
+				C385E6D5E5F8F47F8A97BC1D8ABF1123 /* ONOXMLDocument.m */,
+				9C78C19F797F1986821290B6B2E1BBFA /* Support Files */,
+			);
+			path = Ono;
 			sourceTree = "<group>";
 		};
 		BA3657E0DE3AAE71EDD1693FD590D9CF /* CCHTransportClient */ = {
@@ -508,17 +519,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4242F826666DF460A4F84959BD433AA /* Ono */ = {
-			isa = PBXGroup;
-			children = (
-				471184DF7E1753E9036A7B9B293E0166 /* Ono.h */,
-				BE096AF66D8579025FB70E44D96221B9 /* ONOXMLDocument.h */,
-				C76CDBD4DF15A42BB254A03FDD37DCDA /* ONOXMLDocument.m */,
-				1F154E636A899580D750E12A7431F3B6 /* Support Files */,
-			);
-			path = Ono;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -543,8 +543,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8FD75A39AC99ABB3320D7B1E779B13 /* Ono.h in Headers */,
-				388C3371B99C47FE1C64A9FA1139656C /* ONOXMLDocument.h in Headers */,
+				E4E9F7F311240FC313BC529FCDE57AE9 /* Ono.h in Headers */,
+				BE6F968CFDE65F2005CBF7BDED2369B3 /* ONOXMLDocument.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,7 +715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEB70CD48308A8A2496FA138B3449D7 /* Ono-dummy.m in Sources */,
-				B28F2B679C06AD679D714E16C011E2D0 /* ONOXMLDocument.m in Sources */,
+				EDFEC8FCDAE0CE44B48C1F61ACB760DC /* ONOXMLDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,7 +880,7 @@
 		};
 		49360FDEFA5C0C0D1E2736A8C155FE19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52B26B22189984EE24143AF232903B61 /* Ono.xcconfig */;
+			baseConfigurationReference = 0834EE46AD521101C4D16DF8663E9E5D /* Ono.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Ono/Ono-prefix.pch";
@@ -1009,7 +1009,7 @@
 		};
 		A981A10A7EBDDECD1FDB5A9E38ACB36D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52B26B22189984EE24143AF232903B61 /* Ono.xcconfig */;
+			baseConfigurationReference = 0834EE46AD521101C4D16DF8663E9E5D /* Ono.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Ono/Ono-prefix.pch";

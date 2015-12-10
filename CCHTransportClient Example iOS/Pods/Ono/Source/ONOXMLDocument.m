@@ -27,6 +27,8 @@
 #import <libxml2/libxml/xpathInternals.h>
 #import <libxml2/libxml/HTMLparser.h>
 
+NSString * const ONOXMLDocumentErrorDomain = @"com.ono.error";
+
 static NSRegularExpression * ONOIdRegularExpression() {
     static NSRegularExpression *_ONOIdRegularExpression = nil;
     static dispatch_once_t onceToken;
@@ -126,14 +128,30 @@ NSString * ONOXPathFromCSS(NSString *CSS) {
 }
 
 static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSString *ns) {
-    BOOL matchingTag = !tag || [[NSString stringWithUTF8String:(const char *)node->name] compare:tag options:NSCaseInsensitiveSearch] == NSOrderedSame;
+    BOOL matchingTag = !tag || [@((const char *)node->name) compare:tag options:NSCaseInsensitiveSearch] == NSOrderedSame;
 
-    BOOL matchingNamespace = !ns ? YES : (((node->ns != NULL) && (node->ns->prefix != NULL)) ? [[NSString stringWithUTF8String:(const char *)node->ns->prefix] compare:ns options:NSCaseInsensitiveSearch] == NSOrderedSame : NO);
+    BOOL matchingNamespace = !ns ? YES : (((node->ns != NULL) && (node->ns->prefix != NULL)) ? [@((const char *)node->ns->prefix) compare:ns options:NSCaseInsensitiveSearch] == NSOrderedSame : NO);
 
     return matchingTag && matchingNamespace;
 }
 
+static void ONOSetErrorFromXMLErrorPtr(NSError * __autoreleasing *error, xmlErrorPtr errorPtr) {
+    if (error && errorPtr) {
+        NSString *message = [[NSString stringWithCString:(const char *)errorPtr->message encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSInteger code = errorPtr->code;
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: message};
+        *error = [NSError errorWithDomain:ONOXMLDocumentErrorDomain code:code userInfo:userInfo];
+        xmlResetError(errorPtr);
+    }
+}
+
 @interface ONOXPathEnumerator : NSEnumerator <NSFastEnumeration>
+@end
+
+@interface ONOXPathFunctionResult()
+@property (readwrite, nonatomic) BOOL boolValue;
+@property (readwrite, nonatomic) double numericValue;
+@property (readwrite, nonatomic, copy) NSString *stringValue;
 @end
 
 @interface ONOXPathEnumerator ()
@@ -145,6 +163,8 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 @interface ONOXMLElement ()
 @property (readwrite, nonatomic, assign) xmlNodePtr xmlNode;
 @property (readwrite, nonatomic, weak) ONOXMLDocument *document;
+
+- (xmlXPathObjectPtr)xmlXPathObjectPtrWithXPath:(NSString *)XPath;
 @end
 
 @interface ONOXMLDocument ()
@@ -154,6 +174,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 @property (readwrite, nonatomic, assign) NSStringEncoding stringEncoding;
 @property (readwrite, nonatomic, strong) NSNumberFormatter *numberFormatter;
 @property (readwrite, nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (readwrite, nonatomic, strong) NSMutableDictionary *defaultNamespaces;
 
 - (ONOXMLElement *)elementWithNode:(xmlNodePtr)node;
 - (ONOXPathEnumerator *)enumeratorWithXPathObject:(xmlXPathObjectPtr)XPath;
@@ -203,6 +224,12 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 #pragma mark -
 
+@implementation ONOXPathFunctionResult
+
+@end
+
+#pragma mark -
+
 @implementation ONOXMLDocument
 
 + (instancetype)XMLDocumentWithString:(NSString *)string
@@ -215,8 +242,9 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 + (instancetype)XMLDocumentWithData:(NSData *)data
                               error:(NSError * __autoreleasing *)error
 {
-    xmlDocPtr document = xmlReadMemory([data bytes], (int)[data length], "", nil, XML_PARSE_RECOVER);
+    xmlDocPtr document = xmlReadMemory([data bytes], (int)[data length], "", nil, XML_PARSE_NOWARNING | XML_PARSE_NOERROR | XML_PARSE_RECOVER);
     if (!document) {
+        ONOSetErrorFromXMLErrorPtr(error, xmlGetLastError());
         return nil;
     }
 
@@ -233,8 +261,9 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 + (instancetype)HTMLDocumentWithData:(NSData *)data
                                error:(NSError * __autoreleasing *)error
 {
-    xmlDocPtr document = htmlReadMemory([data bytes], (int)[data length], "", nil, HTML_PARSE_NOWARNING | HTML_PARSE_NOERROR);
+    xmlDocPtr document = htmlReadMemory([data bytes], (int)[data length], "", nil, HTML_PARSE_NOWARNING | HTML_PARSE_NOERROR | HTML_PARSE_RECOVER);
     if (!document) {
+        ONOSetErrorFromXMLErrorPtr(error, xmlGetLastError());
         return nil;
     }
 
@@ -267,8 +296,9 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (NSNumberFormatter *)numberFormatter {
     if (!_numberFormatter) {
-        _numberFormatter = [[NSNumberFormatter alloc] init];
-        [_numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+        [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        self.numberFormatter = numberFormatter;
     }
 
     return _numberFormatter;
@@ -276,15 +306,28 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (NSDateFormatter *)dateFormatter {
     if (!_dateFormatter) {
-        _dateFormatter = [[NSDateFormatter alloc] init];
-        [_dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
-        [_dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+        self.dateFormatter = dateFormatter;
     }
 
     return _dateFormatter;
 }
 
 #pragma mark -
+
+- (void)definePrefix:(NSString *)prefix
+ forDefaultNamespace:(NSString *)ns
+{
+    if (!self.defaultNamespaces) {
+        self.defaultNamespaces = [NSMutableDictionary dictionary];
+    }
+    
+    self.defaultNamespaces[ns] = prefix;
+}
+
+#pragma mark - Private Methods
 
 - (ONOXMLElement *)elementWithNode:(xmlNodePtr)node {
     if (!node) {
@@ -316,6 +359,10 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
     return [self.rootElement XPath:XPath];
 }
 
+- (ONOXPathFunctionResult *)functionResultByEvaluatingXPath:(NSString *)XPath {
+    return [self.rootElement functionResultByEvaluatingXPath:XPath];
+}
+
 - (void)enumerateElementsWithXPath:(NSString *)XPath
                              block:(void (^)(ONOXMLElement *element))block
 {
@@ -334,8 +381,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
     [self.rootElement enumerateElementsWithXPath:XPath usingBlock:block];
 }
 
-- (ONOXMLElement *)firstChildWithXPath:(NSString *)XPath
-{
+- (ONOXMLElement *)firstChildWithXPath:(NSString *)XPath {
     return [self.rootElement firstChildWithXPath:XPath];
 }
 
@@ -355,8 +401,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
     [self.rootElement enumerateElementsWithCSS:CSS usingBlock:block];
 }
 
-- (ONOXMLElement *)firstChildWithCSS:(NSString *)CSS
-{
+- (ONOXMLElement *)firstChildWithCSS:(NSString *)CSS {
     return [self.rootElement firstChildWithCSS:CSS];
 }
 
@@ -364,7 +409,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (NSString *)version {
     if (!_version && self.xmlDocument->version != NULL) {
-        self.version = [NSString stringWithUTF8String:(const char *)self.xmlDocument->version];
+        self.version = @((const char *)self.xmlDocument->version);
     }
 
     return _version;
@@ -372,7 +417,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (NSStringEncoding)stringEncoding {
     if (!_stringEncoding && self.xmlDocument->encoding != NULL) {
-        NSString *encodingName = [NSString stringWithUTF8String:(const char *)self.xmlDocument->encoding];
+        NSString *encodingName = @((const char *)self.xmlDocument->encoding);
         CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
         if (encoding != kCFStringEncodingInvalidId) {
             self.stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
@@ -462,7 +507,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 #ifdef __cplusplus
 - (NSString *)ns {
     if (!_ns && self.xmlNode->ns != NULL && self.xmlNode->ns->prefix != NULL) {
-        self.ns = [NSString stringWithUTF8String:(const char *)self.xmlNode->ns->prefix];
+        self.ns = @((const char *)self.xmlNode->ns->prefix);
     }
 
     return _ns;
@@ -470,7 +515,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 #else
 - (NSString *)namespace {
     if (!_namespace && self.xmlNode->ns != NULL && self.xmlNode->ns->prefix != NULL) {
-        self.namespace = [NSString stringWithUTF8String:(const char *)self.xmlNode->ns->prefix];
+        self.namespace = @((const char *)self.xmlNode->ns->prefix);
     }
 
     return _namespace;
@@ -479,7 +524,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (NSString *)tag {
     if (!_tag && self.xmlNode->name != NULL) {
-        self.tag = [NSString stringWithUTF8String:(const char *)self.xmlNode->name];
+        self.tag = @((const char *)self.xmlNode->name);
     }
 
     return _tag;
@@ -499,7 +544,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
     if (!_attributes) {
         NSMutableDictionary *mutableAttributes = [NSMutableDictionary dictionary];
         for (xmlAttrPtr attribute = self.xmlNode->properties; attribute != NULL; attribute = attribute->next) {
-            NSString *key = [NSString stringWithUTF8String:(const char *)attribute->name];
+            NSString *key = @((const char *)attribute->name);
             [mutableAttributes setObject:[self valueForAttribute:key] forKey:key];
         }
 
@@ -511,9 +556,9 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 
 - (id)valueForAttribute:(NSString *)attribute {
     id value = nil;
-    const unsigned char *xmlValue = xmlGetProp(self.xmlNode, (const xmlChar *)[attribute cStringUsingEncoding:NSUTF8StringEncoding]);
+    const unsigned char *xmlValue = xmlGetProp(self.xmlNode, (const xmlChar *)[attribute UTF8String]);
     if (xmlValue) {
-        value = [NSString stringWithUTF8String:(const char *)xmlValue];
+        value = @((const char *)xmlValue);
         xmlFree((void *)xmlValue);
     }
 
@@ -524,9 +569,9 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
             inNamespace:(NSString *)ns
 {
     id value = nil;
-    const unsigned char *xmlValue = xmlGetNsProp(self.xmlNode, (const xmlChar *)[attribute cStringUsingEncoding:NSUTF8StringEncoding], (const xmlChar *)[ns cStringUsingEncoding:NSUTF8StringEncoding]);
+    const unsigned char *xmlValue = xmlGetNsProp(self.xmlNode, (const xmlChar *)[attribute UTF8String], (const xmlChar *)[ns UTF8String]);
     if (xmlValue) {
-        value = [NSString stringWithUTF8String:(const char *)xmlValue];
+        value = @((const char *)xmlValue);
         xmlFree((void *)xmlValue);
     }
 
@@ -642,7 +687,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 - (NSString *)stringValue {
     if (!_stringValue) {
         xmlChar *key = xmlNodeGetContent(self.xmlNode);
-        self.stringValue = key ? [NSString stringWithUTF8String:(const char *)key] : @"";
+        self.stringValue = key ? @((const char *)key) : @"";
         xmlFree(key);
     }
 
@@ -680,7 +725,7 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
 - (NSString *)description {
     xmlBufferPtr buffer = xmlBufferCreate();
     xmlNodeDump(buffer, self.xmlNode->doc, self.xmlNode, 0, false);
-    NSString *rawXMLString = [NSString stringWithUTF8String:(const char *)xmlBufferContent(buffer)];
+    NSString *rawXMLString = @((const char *)xmlBufferContent(buffer));
     xmlBufferFree(buffer);
 
     return rawXMLString;
@@ -709,28 +754,26 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
         return nil;
     }
 
-    ONOXPathEnumerator *enumerator = nil;
-    xmlXPathContextPtr context = xmlXPathNewContext(self.xmlNode->doc);
-    if (context) {
-        context->node = self.xmlNode;
-
-        // Due to a bug in libxml2, namespaces may not appear in `xmlNode->ns`.
-        // As a workaround, `xmlNode->nsDef` is recursed to explicitly register namespaces.
-        for (xmlNodePtr node = self.xmlNode; node->parent != NULL; node = node->parent) {
-            for (xmlNsPtr ns = node->nsDef; ns != NULL; ns = ns->next) {
-                if (ns->prefix) {
-                    xmlXPathRegisterNs(context, ns->prefix, ns->href);
-                }
-            }
-        }
-        
-        xmlXPathObjectPtr xmlXPath = xmlXPathEvalExpression((xmlChar *)[XPath cStringUsingEncoding:NSUTF8StringEncoding], context);
-        enumerator = [self.document enumeratorWithXPathObject:xmlXPath];
-
-        xmlXPathFreeContext(context);
+    xmlXPathObjectPtr xmlXPath = [self xmlXPathObjectPtrWithXPath:XPath];
+    if (xmlXPath) {
+        return [self.document enumeratorWithXPathObject:xmlXPath];
     }
 
-    return enumerator;
+    return nil;
+}
+
+- (ONOXPathFunctionResult *)functionResultByEvaluatingXPath:(NSString *)XPath {
+    xmlXPathObjectPtr xmlXPath = [self xmlXPathObjectPtrWithXPath:XPath];
+    if (xmlXPath) {
+        ONOXPathFunctionResult *result = [[ONOXPathFunctionResult alloc] init];
+        result.boolValue = xmlXPath->boolval > 0 ? YES : NO;
+        result.numericValue = xmlXPath->floatval;
+        result.stringValue = xmlXPath->stringval ? @((char *)xmlXPath->stringval) : nil;
+        
+        return result;
+    }
+    
+    return nil;
 }
 
 - (void)enumerateElementsWithXPath:(NSString *)XPath
@@ -801,6 +844,42 @@ static BOOL ONOXMLNodeMatchesTagInNamespace(xmlNodePtr node, NSString *tag, NSSt
     }
     
     return nil;
+}
+
+#pragma mark -
+
+- (xmlXPathObjectPtr)xmlXPathObjectPtrWithXPath:(NSString *)XPath
+{
+    xmlXPathContextPtr context = xmlXPathNewContext(self.xmlNode->doc);
+    if (context) {
+        context->node = self.xmlNode;
+
+        // Due to a bug in libxml2, namespaces may not appear in `xmlNode->ns`.
+        // As a workaround, `xmlNode->nsDef` is recursed to explicitly register namespaces.
+        for (xmlNodePtr node = self.xmlNode; node->parent != NULL; node = node->parent) {
+            for (xmlNsPtr ns = node->nsDef; ns != NULL; ns = ns->next) {
+                const xmlChar *prefix = ns->prefix;
+                if (!prefix && self.document.defaultNamespaces) {
+                    NSString *href = @((char *)ns->href);
+                    NSString *defaultPrefix = self.document.defaultNamespaces[href];
+                    if (defaultPrefix) {
+                        prefix = (xmlChar *)[defaultPrefix UTF8String];
+                    }
+                }
+
+                if (prefix) {
+                    xmlXPathRegisterNs(context, prefix, ns->href);
+                }
+            }
+        }
+
+        xmlXPathObjectPtr xmlXPath = xmlXPathEvalExpression((xmlChar *)[XPath UTF8String], context);
+        xmlXPathFreeContext(context);
+
+        return xmlXPath;
+    }
+
+    return NULL;
 }
 
 #pragma mark - NSObject
